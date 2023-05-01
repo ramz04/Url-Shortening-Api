@@ -6,11 +6,11 @@
 
 
 .App {
-    @apply font-poppins md:container md:py-3
+    @apply font-poppins md:py-3
 }
 
 .nav {
-    @apply flex items-center justify-between p-4 
+    @apply flex items-center justify-between p-4 md:container
 }
 
 .nav--menu {
@@ -38,6 +38,10 @@
     @apply bg-Cyan py-2 px-5 rounded-full text-white hover:brightness-110 font-bold
 }
 
+.hero--section{
+    @apply md:container
+}
+
 .article--heading {
     @apply text-VeryDarkBlue text-3xl mt-5 font-bold text-center
 }
@@ -51,7 +55,7 @@
 }
 
 .advanced--stats {
-    @apply px-4 pt-20 bg-gray-100
+    @apply px-4 pt-20 bg-gray-100 
 }
 
 .stats--header{
@@ -87,3 +91,23 @@
     @apply text-GrayishViolet text-center mt-4 mb-6
 }
 
+.boost {
+    background-color: hsl(257, 27%, 26%);
+    height: 17.188rem;
+}
+  
+.boost img {
+height: 17.188rem;
+@apply w-full;
+}
+
+.boost .boost-inner {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.btn-cta {
+@apply bg-cyan-500 py-2 px-4 text-white hover:opacity-75 transition-all duration-150 cursor-pointer;
+}

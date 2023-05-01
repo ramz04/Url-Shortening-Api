@@ -3,6 +3,9 @@ import illustration from '../assets/images/illustration-working.svg'
 import brand from '../assets/images/icon-brand-recognition.svg'
 import records from '../assets/images/icon-detailed-records.svg'
 import customizable from '../assets/images/icon-fully-customizable.svg'
+import bgMobile from "../assets/images/bg-boost-mobile.svg"
+import bgDesktop from "../assets/images/bg-boost-desktop.svg"
+
 
 function Home() {
   return (
@@ -36,7 +39,7 @@ function Home() {
           Track how your links are performing across the web with our 
           advanced statistics dashboard.
         </p>
-        <div className='card'>
+        <div className='card pb-20'>
           <div className='line'></div>
           <div className='card--wrapper'>
               <article className='card--items'>
@@ -76,7 +79,19 @@ function Home() {
         </div>
       </div>
       <div className='boosts'>
-        
+      <section className="boost relative">
+        <picture>
+          <source media="(min-width: 768px)" srcSet={bgDesktop} />
+          <img src={bgMobile} alt="" />
+        </picture>
+
+        <div className="flex items-center justify-center flex-col boost-inner">
+          <h2 className="mb-5 text-3xl md:text-4xl text-white font-bold text-center">
+            Boost your links today
+          </h2>
+          <button className="btn-cta rounded-full">Get Started</button>
+        </div>
+      </section>
       </div>
       <div className='footer'>
 
