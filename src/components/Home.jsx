@@ -4,7 +4,7 @@ import illustration from '../assets/images/illustration-working.svg'
 function Home() {
   return (
     <div>
-      <div className='hero--section'>
+      <div className='hero--section overflow-x-hidden'>
         <div className='hero'>
             <div className='relative'>
               <img alt='Illustration' className='relative -right-8' src={illustration} loading='lazy' />
