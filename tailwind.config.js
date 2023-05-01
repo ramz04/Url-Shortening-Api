@@ -5,6 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    container:{
+      padding: "8rem",
+    },
     extend: {
       colors: {
         Cyan: "hsl(180, 66%, 49%)",

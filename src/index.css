@@ -6,5 +6,33 @@
 
 
 .App {
-    @apply font-poppins text-5xl
+    @apply font-poppins md:container md:py-3
+}
+
+.nav {
+    @apply flex items-center justify-between p-4 
+}
+
+.nav--menu {
+    @apply fixed top-16 md:hidden right-4 rounded-xl left-4 transition-transform duration-500 ease-in-out h-[55%] bg-DarkViolet 
+}
+
+.nav--menu--desktop {
+    @apply space-x-4 text-GrayishViolet
+}
+
+.nav--logo--wrapper{
+    @apply flex items-center gap-6
+}
+
+.nav--list {
+    @apply flex gap-4 text-GrayishViolet 
+}
+
+.nav--items{
+    @apply hover:text-VeryDarkViolet
+}
+
+.sign--up{
+    @apply bg-Cyan py-2 px-5 rounded-full text-white hover:brightness-110 font-bold
 }
