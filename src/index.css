@@ -6,7 +6,7 @@
 
 
 .App {
-    @apply font-poppins md:py-3
+    @apply font-poppins md:pt-3
 }
 
 .nav {
@@ -121,3 +121,19 @@ transform: translate(-50%, -50%);
     text-align: center;
     @apply md:text-left;
 }
+
+@media (min-width: 1024px) {
+    .line {
+      @apply bg-cyan-500 h-2 w-full absolute;
+      top: 50%;
+    }
+  }
+
+  /*Part of the Media Up there */
+  /* .card article:nth-child(3) {
+    transform: translateY(2rem);
+  }
+
+  .card article:last-child {
+    transform: translateY(4rem);
+  } */
