@@ -3,8 +3,8 @@ import illustration from '../assets/images/illustration-working.svg'
 
 function Home() {
   return (
-    <div>
-      <div className='hero--section overflow-x-hidden'>
+    <div className='overflow-x-hidden'>
+      <div className='hero--section'>
         <div className='hero'>
             <div className='relative'>
               <img alt='Illustration' className='relative -right-8' src={illustration} loading='lazy' />
@@ -26,6 +26,15 @@ function Home() {
               <button className='bg-Cyan w-full py-2 rounded-lg text-white font-bold'>Shorten it</button>
             </div>
         </div>
+      </div>
+      <div className='advanced--stats'>
+
+      </div>
+      <div className='boosts'>
+
+      </div>
+      <div className='footer'>
+
       </div>
     </div>
   )
