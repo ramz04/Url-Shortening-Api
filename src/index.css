@@ -18,8 +18,9 @@
 }
 
 .nav--menu--desktop {
-    @apply space-x-4 text-GrayishViolet
+    @apply space-x-4 text-GrayishViolet font-bold
 }
+
 
 .nav--logo--wrapper{
     @apply flex items-center gap-6

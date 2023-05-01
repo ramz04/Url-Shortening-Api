@@ -42,9 +42,18 @@ function Navbar() {
               </div>
             </button>
           </nav>
-          <div aria-checked={!open} className="nav--menu aria-checked:-translate-y-[120%]">
-                  
-          </div>
+          <div aria-checked={!open} className="nav--menu aria-checked:-translate-y-[120%] flex items-center flex-col gap-y-7">
+              <ul className='flex w-full flex-col items-center pt-10 px-6 text-white font-bold text-lg gap-6'>
+                  <li className='nav--items'><a href="#">Features</a></li>
+                  <li className='nav--items'><a href="#">Pricing</a></li>
+                  <li className='nav--items'><a href="#">Resources</a></li>
+              </ul>
+              <div className='w-[80%] h-[0.8px] brightness-75 px-6 nav--menu--mobile bg-GrayishViolet'/>
+              <div className='flex flex-col gap-y-6 px-8 w-full'>
+                <button className='hover:text-VeryDarkViolet font-bold text-white text-lg'>Login</button>
+                <button className='bg-Cyan py-2 w-full rounded-full text-white hover:brightness-110 font-bold'>Sign up</button>
+              </div>
+              </div>
         </div>
         <div className='hidden md:flex nav--menu--desktop'>
           <button className='hover:text-VeryDarkViolet'>Login</button>
