@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <div className='nav'>
         <div className='nav--logo--wrapper'>
-          <img src={logo} alt='Logo' loading='lazy' />
+          <img src={logo} alt='Logo' loading='lazy' className='cursor-pointer' />
           <div className='hidden md:flex'>
             <ul className='nav--list'>
               <li className='nav--items'><a href="#">Features</a></li>

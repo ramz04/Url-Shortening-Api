@@ -14,11 +14,11 @@
 }
 
 .nav--menu {
-    @apply fixed top-16 md:hidden right-4 rounded-xl left-4 transition-transform duration-500 ease-in-out h-[55%] bg-DarkViolet 
+    @apply fixed top-16 md:hidden right-4 rounded-xl left-4 transition-transform duration-500 ease-in-out h-[55%] bg-DarkViolet z-50
 }
 
 .nav--menu--desktop {
-    @apply space-x-4 text-GrayishViolet font-bold
+    @apply space-x-6 text-GrayishViolet font-bold
 }
 
 
@@ -36,4 +36,16 @@
 
 .sign--up{
     @apply bg-Cyan py-2 px-5 rounded-full text-white hover:brightness-110 font-bold
+}
+
+.article--heading {
+    @apply text-VeryDarkBlue text-3xl mt-5 font-bold text-center
+}
+
+.article--paragraph {
+    @apply text-GrayishViolet text-center px-4 mt-2 tracking-wide
+}
+
+.shortening--form {
+    @apply  mt-4 
 }
