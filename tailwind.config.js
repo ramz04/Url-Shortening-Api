@@ -27,6 +27,8 @@ export default {
       backgroundImage:{
         "designmobile": 'url("./src/assets/images/bg-shorten-mobile.svg")',
         "design": 'url("./src/assets/images/bg-shorten-desktop.svg")',
+        'boosts': 'url("./src/assets/images/bg-boost-desktop.svg")',
+        "boostmobile": 'url("./src/assets/images/bg-boost-mobile.svg")',
       }
     },
   },

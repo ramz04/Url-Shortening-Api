@@ -49,3 +49,41 @@
 .shortening--form {
     @apply  mt-4 
 }
+
+.advanced--stats {
+    @apply px-4 pt-20 bg-gray-100
+}
+
+.stats--header{
+    @apply text-2xl text-center font-bold text-VeryDarkBlue
+}
+
+.stats--text{
+    @apply text-GrayishViolet text-center mt-3 mb-10
+}
+
+.card{
+    @apply relative  mt-16
+}
+
+.card--wrapper{
+    @apply space-y-14
+}
+
+.card--items {
+    @apply relative rounded-xl bg-white p-5 
+    flex flex-col items-center justify-center h-full
+}
+
+.card--items img{
+    @apply bg-DarkViolet p-3 rounded-full -mt-12
+}
+
+.card--header{
+    @apply text-2xl text-center mt-6 font-bold text-VeryDarkBlue
+}
+
+.card--text{
+    @apply text-GrayishViolet text-center mt-4 mb-6
+}
+
