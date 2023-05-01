@@ -111,3 +111,13 @@ transform: translate(-50%, -50%);
 .btn-cta {
 @apply bg-cyan-500 py-2 px-4 text-white hover:opacity-75 transition-all duration-150 cursor-pointer;
 }
+
+.footer--list{
+    text-align: center;
+    @apply md:text-left;
+}
+
+.footer--article{
+    text-align: center;
+    @apply md:text-left;
+}
