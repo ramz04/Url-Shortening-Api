@@ -60,16 +60,16 @@ function Home() {
   return (
     <div className='overflow-x-hidden h-full'>
       <div className='hero--section'>
-        <div className='hero'>
-            <div className='relative'>
-              <img alt='Illustration' className='relative -right-8' src={illustration} loading='lazy' />
+        <div className='hero md:mt-8 md:flex md:flex-row-reverse md:items-center'>
+            <div className='relative basis-1/2'>
+              <img alt='Illustration' className='relative -right-8 md:-right-40' src={illustration} loading='lazy' />
             </div>
-            <article>
-              <h1 className='article--heading'>More than just shorter links</h1>
-              <p className='article--paragraph'>Build your brand’s recognition and get detailed insights 
+            <article className='basis-1/2 space-y-4'>
+              <h1 className='article--heading md:text-7xl md:text-left'>More than just shorter links</h1>
+              <p className='article--paragraph md:text-left md:text-2xl'>Build your brand’s recognition and get detailed insights 
                 on how your links are performing.
               </p>
-              <div className='flex justify-center mt-5'>
+              <div className='flex justify-center md:justify-start mt-5'>
                 <button className='sign--up '>Get started</button>
               </div>
             </article>
@@ -98,7 +98,7 @@ function Home() {
             </button>
           </div>
         </form>
-        <div className="flex flex-col items-center justify-center bg-white text-center md:flex-row md:justify-between p-3 mt-3 rounded-lg shadow">
+        <div className="flex flex-col items-center justify-center bg-white text-center md:flex-row md:justify-between p-3 mt-[2rem] rounded-lg shadow">
           <article>
             <h6 className="mb-3 md:mb-0">{links.original_link}</h6>
           </article>
@@ -123,7 +123,7 @@ function Home() {
         </div>
         </section>
       </div>
-      <div className='advanced--stats '>
+      <div className='advanced--stats md:pb-24'>
         <h2 className='stats--header'>Advanced Statistics</h2>
         <p className='stats--text'>
           Track how your links are performing across the web with our 
@@ -131,7 +131,7 @@ function Home() {
         </p>
         <div className='card pb-20'>
           <div className='line'></div>
-          <div className='card--wrapper'>
+          <div className='card--wrapper  md:grid md:grid-cols-3 md:gap-24'>
               <article className='card--items'>
                 <img src={brand} alt="Brand" loading='lazy' />
                 <h3 className='card--header'>  
@@ -152,7 +152,7 @@ function Home() {
                 people engage with your content helps inform better decisions.
                 </p>
               </article>
-              <article className='card--items'>
+              <article className='card--items md:mt-6'>
                 <img src={customizable} alt="Brand" loading='lazy' />
                 <h3 className='card--header'>  
                   Fully Customizable

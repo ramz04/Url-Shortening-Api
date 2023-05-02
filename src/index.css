@@ -47,7 +47,7 @@
 }
 
 .article--paragraph {
-    @apply text-GrayishViolet text-center px-4 mt-2 tracking-wide
+    @apply text-GrayishViolet text-center px-4 md:px-0 mt-2 tracking-wide
 }
 
 .shortening--form {
@@ -55,7 +55,7 @@
 }
 
 .advanced--stats {
-    @apply px-4 pt-20 bg-gray-100 
+    @apply px-4 pt-[16rem] bg-gray-100 md:pt-40
 }
 
 .stats--header{
@@ -71,7 +71,7 @@
 }
 
 .card--wrapper{
-    @apply space-y-14
+    @apply space-y-14 md:space-y-0 pt-10
 }
 
 .card--items {
@@ -80,7 +80,7 @@
 }
 
 .card--items img{
-    @apply bg-DarkViolet p-3 rounded-full -mt-12
+    @apply bg-DarkViolet p-3 rounded-full -mt-[3rem]
 }
 
 .card--header{
@@ -94,6 +94,7 @@
 .boost {
     background-color: hsl(257, 27%, 26%);
     height: 17.188rem;
+    
 }
   
 .boost img {
@@ -127,6 +128,14 @@ transform: translate(-50%, -50%);
       @apply bg-cyan-500 h-2 w-full absolute;
       top: 50%;
     }
+
+    .card article:nth-child(3) {
+        transform: translateY(2.9rem);
+      }
+    
+      .card article:last-child {
+        transform: translateY(4rem);
+      } 
   }
 
 .shortener {
@@ -134,6 +143,7 @@ background-color: hsl(257, 27%, 26%);
 height: 17.188rem;
 border-radius: 8px;
 margin-top: 50px;
+@apply md:mt-24;
 }
   
 .shortener img {
@@ -148,12 +158,3 @@ top: 50%;
 transform: translate(-50%, -50%);
 width: 80%;
 }
-
-  /*Part of the Media Up there */
-  /* .card article:nth-child(3) {
-    transform: translateY(2rem);
-  }
-
-  .card article:last-child {
-    transform: translateY(4rem);
-  } */
