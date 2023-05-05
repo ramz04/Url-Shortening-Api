@@ -187,7 +187,7 @@ function Home() {
       <footer className="bg-slate-900 py-10 lg:py-20">
         <div className="max-width grid grid-cols-1 gap-6 justify-items-center md:grid-cols-3 lg:grid-cols-5">
           <article>
-            <img src={logo} alt="" />
+            <img src={logo} alt="" className="footer--img" />
           </article>
 
           <article>
