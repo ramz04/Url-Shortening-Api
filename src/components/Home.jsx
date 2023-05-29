@@ -11,6 +11,8 @@ import pinterest from "../assets/images/icon-pinterest.svg"
 import instagram from "../assets/images/icon-instagram.svg"
 import logo from "../assets/images/logo.svg"
 import Footer from './Footer'
+import Boost from './Boost'
+import Advanced from './Advanced'
 
 
 const getLocalStorage = () => {
@@ -122,66 +124,15 @@ function Home() {
         </div>
         </section>
       </div>
-      <div className='advanced--stats md:pb-24'>
-        <h2 className='stats--header'>Advanced Statistics</h2>
-        <p className='stats--text'>
-          Track how your links are performing across the web with our 
-          advanced statistics dashboard.
-        </p>
-        <div className='card pb-20'>
-          <div className='line'></div>
-          <div className='card--wrapper  md:grid md:grid-cols-3 md:gap-24'>
-              <article className='card--items'>
-                <img src={brand} alt="Brand" loading='lazy' />
-                <h3 className='card--header'>  
-                  Brand Recognition
-                </h3>
-                <p className='card--text'>
-                  Boost your brand recognition with each click. Generic links don’t 
-                  mean a thing. Branded links help instil confidence in your content.
-                </p>
-              </article>
-              <article className='card--items'>
-                <img src={records} alt="Brand" loading='lazy' />
-                <h3 className='card--header'>  
-                  Detailed Records
-                </h3>
-                <p className='card--text'>
-                Gain insights into who is clicking your links. Knowing when and where 
-                people engage with your content helps inform better decisions.
-                </p>
-              </article>
-              <article className='card--items md:mt-6'>
-                <img src={customizable} alt="Brand" loading='lazy' />
-                <h3 className='card--header'>  
-                  Fully Customizable
-                </h3>
-                <p className='card--text'>
-                Improve brand awareness and content discoverability through customizable 
-                links, supercharging audience engagement.
-                </p>
-              </article>
-            </div>
-        </div>
-        <div>
-
-        </div>
-      </div>
-      <div className='boosts'>
-      <section className="boost relative">
-        <picture>
-          <source media="(min-width: 768px)" srcSet={bgDesktop} />
-          <img src={bgMobile} alt="" />
-        </picture>
-
-        <div className="flex items-center justify-center flex-col boost-inner">
-          <h2 className="mb-5 text-3xl md:text-4xl text-white font-bold text-center">
-            Boost your links today
-          </h2>
-          <button className="btn-cta rounded-full">Get Started</button>
-        </div>
-      </section>
-      </div>
+      <Advanced 
+        brand={brand}
+        records={records}
+        customizable={customizable}
+      />
+      <Boost
+        bgDesktop={bgDesktop}
+        bgMobile={bgMobile}
+      />
       <Footer 
         logo={logo} 
         facebook={facebook}

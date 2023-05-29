@@ -71,7 +71,7 @@
 }
 
 .card--wrapper{
-    @apply space-y-14 md:space-y-0 pt-10
+    @apply space-y-14 pt-10
 }
 
 .card--items {
