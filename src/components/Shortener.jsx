@@ -57,7 +57,7 @@ function Shortener(props) {
                 <input
                 type="url"
                 placeholder="Shorten a link here"
-                className="w-full py-2 px-5 rounded-lg mb-2 md:mb-0 md:w-2/3"
+                className="w-full py-4 px-6 rounded-lg mb-2 md:mb-0 md:w-3/4"
                 value={text}
                 onChange={(e) => setText(e.target.value)}
                 />

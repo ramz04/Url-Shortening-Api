@@ -139,11 +139,11 @@ transform: translate(-50%, -50%);
   }
 
 .shortener {
-background-color: hsl(257, 27%, 26%);
-height: 10rem;
-border-radius: 8px;
-margin-top: 50px;
-@apply md:mt-24;
+    background-color: hsl(257, 27%, 26%);
+    height: 10rem;
+    border-radius: 8px;
+    margin-top: 50px;
+    @apply md:mt-24;
 }
   
 .shortener img {
@@ -152,11 +152,11 @@ height: 100%;
 }
   
 .shortener .form {
-position: absolute;
-left: 50%;
-top: 50%;
-transform: translate(-50%, -50%);
-width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
 }
 
 .footer--img {
