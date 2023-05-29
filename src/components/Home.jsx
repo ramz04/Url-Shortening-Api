@@ -13,6 +13,7 @@ import logo from "../assets/images/logo.svg"
 import Footer from './Footer'
 import Boost from './Boost'
 import Advanced from './Advanced'
+import Hero from './Hero'
 
 
 const getLocalStorage = () => {
@@ -61,20 +62,9 @@ function Home() {
   return (
     <div className='overflow-x-hidden h-full'>
       <div className='hero--section'>
-        <div className='hero md:mt-8 md:flex md:flex-row-reverse md:items-center'>
-            <div className='relative basis-1/2'>
-              <img alt='Illustration' className='relative -right-8 md:-right-40' src={illustration} loading='lazy' />
-            </div>
-            <article className='basis-1/2 space-y-4'>
-              <h1 className='article--heading md:text-7xl md:text-left'>More than just shorter links</h1>
-              <p className='article--paragraph md:text-left md:text-2xl'>Build your brand’s recognition and get detailed insights 
-                on how your links are performing.
-              </p>
-              <div className='flex justify-center md:justify-start mt-5'>
-                <button className='sign--up '>Get started</button>
-              </div>
-            </article>
-        </div>
+        <Hero 
+          illustration={illustration}
+        />
         <section className="max-width shortener relative">
         <picture>
           <source media="(min-width: 768px)" srcSet={bgDesktop} />
